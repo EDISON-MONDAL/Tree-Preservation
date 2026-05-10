@@ -158,7 +158,7 @@ const Home = () => {
                                         <h4 className={recentBlogTitle}>Blog Post Title One</h4>
                                     </Link>
 
-                                    <p className={topProgramBlogText}>You're free to use this website template without linking back to us.If you're having problems editing this website template, then don't hesitate to ask for help on the Forums... <a href="/blog" className={readMoreButton}>Read More</a></p>
+                                    <p className={topProgramBlogText}>You're free to use this website template without linking back to us.If you're having problems editing this website template, then don't hesitate to ask for help on the Forums... <Link href="/blog" className={readMoreButton}>Read More</Link></p>
                                 </div>
                             </div>
 
@@ -172,7 +172,7 @@ const Home = () => {
                                         <h4 className={recentBlogTitle}>Blog Post Title Two</h4>
                                     </Link>
 
-                                    <p className={topProgramBlogText}>You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the Terms of Use. You can even remove all our... <a href="/blog" className={readMoreButton}>Read More</a></p>
+                                    <p className={topProgramBlogText}>You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the Terms of Use. You can even remove all our... <Link href="/blog" className={readMoreButton}>Read More</Link></p>
                                 </div>
                             </div>
                         </div>
