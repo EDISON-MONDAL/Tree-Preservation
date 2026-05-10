@@ -43,7 +43,7 @@ const Gallery = () => {
                 <h1 className={title}>Gallery</h1>
 
                 <div className='w-full lg:w-[87%] flex flex-wrap flex-col flex-col md:flex-row justify-start md:justify-between items-center lg:items-center gap-5 '>
-                    <div className=' w-full md:w-[50%] lg:w-[67%] flex justify-center md:justify-start lg:justify-center items-center gap-3 text-[14px] leading-[14px]'>
+                    <div className=' w-full md:w-[50%] lg:w-[67%] flex flex-col sm:flex-row justify-center md:justify-start lg:justify-center items-center gap-3 text-[14px] sm:text-[14px] leading-[14px]'>
 
                         <span className={shortBy}>Short By:</span>
 
@@ -60,7 +60,7 @@ const Gallery = () => {
                         </ul>
                     </div>
 
-                    <div className=' w-full md:w-[47%] lg:w-[30%] flex justify-center md:justify-end items-center '>
+                    <div className=' w-full md:w-[47%] lg:w-[30%] flex flex-col sm:flex-row justify-center md:justify-end items-center '>
                         <Typography sx={{
                             fontSize: '14px',
                             color: '#404040',
@@ -186,7 +186,7 @@ const Gallery = () => {
                         <Link to="/gallery-details">
                         <h3 className={galleryTitle}>Video Title Four</h3>
                         </Link>
-                        
+
                         <p className={galleryText}>Ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                     </div>
                 </div>

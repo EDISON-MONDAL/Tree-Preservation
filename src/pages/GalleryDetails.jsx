@@ -32,7 +32,7 @@ const GalleryDetails = () => {
                 <ul className='w-full md:w[50%] flex justify-center md:justify-end items-center gap-3 text-[10px] sm:text-[14px] leading-[14px] sm:leading-[18px]'>
                     <li className={paginationList}>
                         <button className={paginationButton}>
-                            <IoMdArrowDropleft className='text-[24px] mt-[2px]' />
+                            <IoMdArrowDropleft className='text-[18px] sm:text-[24px] mt-[2px]' />
                             &nbsp;
                             Previous
                             &nbsp;
@@ -48,7 +48,7 @@ const GalleryDetails = () => {
                     <li className={paginationList}>
                         <button className={paginationButton}>Next
                             &nbsp;
-                            <IoMdArrowDropright className='text-[24px] mt-[2px]' />
+                            <IoMdArrowDropright className='text-[18px] sm:text-[24px] mt-[2px]' />
                         </button>
                     </li>
                 </ul>

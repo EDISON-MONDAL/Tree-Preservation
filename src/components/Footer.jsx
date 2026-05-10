@@ -23,13 +23,13 @@ const Footer = () => {
 
     return (
         <div
-            className="w-full h-[360px] sm:h-[205px] md:h-[250px] bg-repeat flex justify-center items-center bg-[length:100px_410px] sm:bg-[length:100px_230px] md:bg-[length:100px_285px] "
+            className="w-full h-[410px] sm:h-[205px] md:h-[250px] bg-repeat flex justify-center items-center bg-[length:100px_470px] sm:bg-[length:100px_230px] md:bg-[length:100px_285px] "
             style={{
                 backgroundImage: `url(${footerBg})`,
-                backgroundRepeat: 'repeat',
+                backgroundRepeat: 'repeat-x',
             }}
         >
-            <div className="w-full h-[320px] sm:h-[170px] md:h-[220px] lg:w-[1000px] flex flex-col sm:flex-row justify-between items-start gap-4 px-4 sm:px-5 md:px-5 lg:px-0  mt-4 sm:mt-3 ">
+            <div className="w-full h-[340px] sm:h-[170px] md:h-[220px] lg:w-[1000px] flex flex-col sm:flex-row justify-between items-start gap-4 px-4 sm:px-5 md:px-5 lg:px-0  mt-4 sm:mt-3 ">
                 {/* column 1 */}
                 <div className={`${footerCol} w-full sm:w-1/2 md:w-1/4`}>
                     <h3 className={footerColTitle}>24 hour customer service</h3>

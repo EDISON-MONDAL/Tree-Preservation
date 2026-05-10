@@ -11,7 +11,7 @@ import topPrograms2 from '../assets/top-program2.jpg'
 import blogPost1 from '../assets/blog-post1.jpg'
 import blogPost2 from '../assets/blog-post2.jpg'
 
-const twoSectionColumn = "w-full sm:w-1/2 h-[210px] md:h-[270px] lg:h-[290px] relative"
+const twoSectionColumn = "w-full sm:w-1/2 h-[220px] md:h-[270px] lg:h-[290px] relative"
 const imgClass =
     "w-full h-[120px] sm:h-[120px] md:h-[160px] lg:h-[200px] object-cover";
 const twoSectionParagraph = "text-[#838383] text-[12px]  md:text-[14px] sm:leading-[18px] md:leading-[24px] lg:leading-[24px] mt-2"
@@ -21,7 +21,9 @@ const multiColumnTitle = "text-[16px] md:text-[20px] font-normal leading-[24px] 
 
 const topProgramImg = "w-full h-[148px] object-cover"
 const topProgramBlogTitle = "uppercase text-[12px] md:text-[14px] font-normal leading-[24px] mt-2"
-const recentPostImg = "w-[95px] h-[95px] object-cover"
+const recentPostImgWrap = "w-[95px] h-[95px] shrink-0"
+
+const recentPostImg = "w-full h-full object-cover"
 const recentBlogTitle = "uppercase text-[12px] md:text-[14px] font-normal"
 const topProgramBlogText = "text-[12px] md:text-[14px] leading-[24px] text-[#838383] mt-1"
 const readMoreButton = "uppercase text-[#cc6a00]"
@@ -70,7 +72,7 @@ const Home = () => {
                 {/* You can help out */}
                 <div className="flex flex-col sm:flex-row gap-4">
                     <div className={twoSectionColumn}>
-                        <img src={helpOut} alt="You can help out" className={imgClass} />
+                        <Link to='/programs'><img src={helpOut} alt="You can help out" className={imgClass} /></Link>
 
                         <p className={twoSectionParagraph}>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.</p>
 
@@ -80,8 +82,12 @@ const Home = () => {
                             backgroundSize: '8px 9px'
                         }}></div>
                     </div>
+
+
                     <div className={twoSectionColumn}>
-                        <img src={whatWeDo} alt="What we do" className={imgClass} />
+                        <Link to='/programs'>
+                            <img src={whatWeDo} alt="What we do" className={imgClass} />
+                        </Link>
 
                         <p className={twoSectionParagraph}>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
 
@@ -106,16 +112,26 @@ const Home = () => {
 
                         <div className="flex gap-4  mt-4">
                             <div className='w-1/2'>
-                                <img src={topPrograms} className={topProgramImg} />
+                                <Link to='/programs'>
+                                    <img src={topPrograms} className={topProgramImg} />
+                                </Link>
 
-                                <h4 className={topProgramBlogTitle}>Tree Planting</h4>
+                                <Link to='/programs'>
+                                    <h4 className={topProgramBlogTitle}>Tree Planting</h4>
+                                </Link>
 
                                 <p className={topProgramBlogText}>If you're having problems editing this website template.</p>
                             </div>
-                            <div className='w-1/2'>
-                                <img src={topPrograms2} className={topProgramImg} />
 
-                                <h4 className={topProgramBlogTitle}>Paper Recycling</h4>
+
+                            <div className='w-1/2'>
+                                <Link to='/programs'>
+                                    <img src={topPrograms2} className={topProgramImg} />
+                                </Link>
+
+                                <Link to='/programs'>
+                                    <h4 className={topProgramBlogTitle}>Paper Recycling</h4>
+                                </Link>
 
                                 <p className={topProgramBlogText}>Then don't hesitate to ask for help on the.</p>
                             </div>
@@ -133,22 +149,30 @@ const Home = () => {
 
                         <div className="flex flex-col gap-4 mt-4">
                             <div className={recentBlogRow}>
-                                <img src={blogPost1} className={recentPostImg} />
+                                <Link to="/blog" className={recentPostImgWrap}>
+                                    <img src={blogPost1} className={recentPostImg} />
+                                </Link>
 
                                 <div>
-                                    <h4 className={recentBlogTitle}>Blog Post Title One</h4>
+                                    <Link to="/blog">
+                                        <h4 className={recentBlogTitle}>Blog Post Title One</h4>
+                                    </Link>
 
-                                    <p className={topProgramBlogText}>You're free to use this website template without linking back to us.If you're having problems editing this website template, then don't hesitate to ask for help on the Forums... <a href="#" className={readMoreButton}>Read More</a></p>
+                                    <p className={topProgramBlogText}>You're free to use this website template without linking back to us.If you're having problems editing this website template, then don't hesitate to ask for help on the Forums... <a href="/blog" className={readMoreButton}>Read More</a></p>
                                 </div>
                             </div>
 
                             <div className={recentBlogRow}>
-                                <img src={blogPost2} className={recentPostImg} />
+                                <Link to="/blog" className={recentPostImgWrap}>
+                                    <img src={blogPost2} className={recentPostImg} />
+                                </Link>
 
                                 <div>
-                                    <h4 className={recentBlogTitle}>Blog Post Title Two</h4>
+                                    <Link to="/blog">
+                                        <h4 className={recentBlogTitle}>Blog Post Title Two</h4>
+                                    </Link>
 
-                                    <p className={topProgramBlogText}>You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the Terms of Use. You can even remove all our... <a href="#" className={readMoreButton}>Read More</a></p>
+                                    <p className={topProgramBlogText}>You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the Terms of Use. You can even remove all our... <a href="/blog" className={readMoreButton}>Read More</a></p>
                                 </div>
                             </div>
                         </div>

@@ -27,8 +27,8 @@ const galleryImg = "w-full h-[85px] object-cover"
 
 const postWrap = 'flex flex-col gap-5 mb-5'
 const postHeaderWrap = "flex flex-col md:flex-row justify-between gap-0 md:gap-5"
-const postTitleWrap = "w-full md:w-[85%] flex flex-wrap items-center justify-start gap-5"
-const postDate = `h-[67px] w-[78px] font-['Times_New_Roman',Times,serif] 
+const postTitleWrap = "w-full md:w-[85%] flex flex-wrap items-center justify-start gap-5  "
+const postDate = `h-[67px] w-[78px] shrink-0 font-['Times_New_Roman',Times,serif] 
 [&>p]:text-[#F2F2F2] 
 [&>p]:text-[18px] 
 [&>p]:leading-5
@@ -37,8 +37,8 @@ const postDate = `h-[67px] w-[78px] font-['Times_New_Roman',Times,serif]
 [&>p]: text-center
 flex justify-end items-center`
 
-const postTitleCatWrap = 'w-[69%] sm:w-[83%] md:w-[84%]'
-const postTitle = "text-[18px] sm:text-[24px] font-[700] leading-[24px] uppercase font-['Times_New_Roman',Times,serif] hover:text-[#cc6a00] hover:underline"
+const postTitleCatWrap = 'flex-1'
+const postTitle = "text-[14px] sm:text-[24px] font-[700] leading-[24px] uppercase font-['Times_New_Roman',Times,serif] hover:text-[#cc6a00] hover:underline"
 const postCat = 'text-[#838383] text-[14px] leading-6'
 const redText = "text-[#cc6a00] hover:underline text-[14px] leading-6"
 const commentCount = "ml-[97px] md:ml-0 md:mt-[33px] w-auto     md:w-[13%] flex justify-start md:justify-end items-end"
@@ -70,7 +70,7 @@ const Blog = () => {
 
                                 <div className={postTitleCatWrap}>
                                     <h1 className={postTitle}>
-                                        <Link to=''>Blog Post TItle One</Link>
+                                        <Link to=''>Blog Post TItle One Blog Post TItle One</Link>
                                     </h1>
 
                                     <p className={postCat}>Posted in
