@@ -30,34 +30,34 @@ const recentBlogRow = "flex gap-4 border-b border-gray-300 pb-4 last:border-b-0"
 
 const Home = () => {
     return (
-        <div  className='w-full flex flex-col items-center justify-center'          >
+        <div className='w-full flex flex-col items-center justify-center'          >
 
             {/* Featured Section */}
-            <div className='w-full h-[140px] sm:h-[260px] md:h-[317px] lg:h-[396px] flex justify-center' style={{
+            <div className='w-full h-[200px] sm:h-[260px] md:h-[317px] lg:h-[396px] flex justify-center' style={{
                 backgroundImage: `url(${bgFeatured})`,
                 backgroundRepeat: 'repeat-x',
             }}>
                 <div className="w-full lg:w-[1000px] h-full px-4 sm:px-5 md:px-5 lg:px-0 text-white font-rokkitt"
                     style={{
                         backgroundImage: `url(${bgFeaturedImage})`,
-                        backgroundSize: 'contain',
-                        backgroundRepeat: 'repeat-x',
-                        backgroundPositionX: 'left',
+                        backgroundSize: '100% 100%',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
                     }}>
                     <div className="flex flex-col justify-start h-full ml-5 sm:ml-10 md:ml-15 lg:ml-22">
-                        <p className='text-[12px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[14px] sm:leading-[22px] md:leading-[26px] lg:leading-[30px] mt-2 sm:mt-4 md:mt-6 lg:mt-8'>As The Saying Goes..
+                        <p className='text-[12px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[22px] md:leading-[26px] lg:leading-[30px] mt-2 sm:mt-4 md:mt-6 lg:mt-8'>As The Saying Goes..
                             <br />
                             You Don’t Know What You’ve Got
                             <br />
                             ‘Till It’s Gone.</p>
 
-                        <h2 className='text-[14px] sm:text-[24px] md:text-[26px] lg:text-[36px] leading-[8px] sm:leading-[14px] md:leading-[18px] lg:leading-[24px] font-[400] mt-2 sm:mt-4 md:mt-6 lg:mt-8'>Plant A Tree.
+                        <h2 className='text-[14px] sm:text-[24px] md:text-[26px] lg:text-[36px] leading-[12px] sm:leading-[14px] md:leading-[18px] lg:leading-[24px] font-[400] mt-4 md:mt-6 lg:mt-8'>Plant A Tree.
                             <br />
                             <br />
                             Grow A Tree.
                             <br />
                             <br />
-                            <span className='text-[14px] sm:text-[28px] md:text-[34px] lg:text-[48px] text-[#fff600] leading-[16px] sm:leading-[28px] md:leading-[30px] lg:leading-[30px]'>Save The Future.</span>
+                            <span className='text-[14px] sm:text-[28px] md:text-[34px] lg:text-[48px] text-[#fff600] leading-[20px] sm:leading-[28px] md:leading-[30px] lg:leading-[30px]'>Save The Future.</span>
                         </h2>
 
 

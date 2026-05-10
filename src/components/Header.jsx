@@ -25,7 +25,7 @@ const Header = () => {
         <div className="flex justify-center w-full bg-repeat-x bg-center bg-[length:auto_100%] text-white "
             style={{ backgroundImage: `url(${bgImage})` }}>
 
-            <div className="w-full lg:w-[1000px] h-[120px] px-4 sm:px-5 md:px-5 lg:px-0" >
+            <div className="w-full  lg:w-[1000px] h-[120px] px-4 sm:px-5 md:px-5 lg:px-0" >
 
                 {/* Donate Now button */}
                 <div className="flex justify-end lg:px-10">
@@ -51,11 +51,11 @@ const Header = () => {
                             },
 
                             "@media (min-width: 640px) and (max-width: 767px)": {
-                                fontSize: "14px",
+                                fontSize: "16px",
                             },
 
                             "@media (min-width: 1px) and (max-width: 639px)": {
-                                fontSize: "14px",
+                                fontSize: "10px",
                             },
                         }}
                     >
@@ -63,12 +63,12 @@ const Header = () => {
                     </Button>
                 </div>
 
-                <div className="font-[\'Times_New_Roman\'] relative md:-top-4 lg:-top-8 flex justify-between items-end">
+                <div className="font-[\'Times_New_Roman\'] relative top-4 sm:-top-2 md:-top-4 lg:-top-8 flex justify-between items-end">
                     <div className="capitalize">
-                        <h1 className="text-[28px] md:text-[34px] lg:text-[38px]">
+                        <h1 className="text-[14px] sm:text-[32px] md:text-[34px] lg:text-[38px]">
                             <sapn className="text-yellow-200">World</sapn>
                             <sapn className="text-green-300"> Tree</sapn> Preservation</h1>
-                        <p className="uppercase text-[10.5px] md:text-[12.6px] lg:text-[14px]">Save trees. Plant tress. Build a greener future.</p>
+                        <p className="uppercase text-[8px] sm:text-[12px] md:text-[12.6px] lg:text-[14px]">Save trees. Plant tress. Build a greener future.</p>
                     </div>
 
                     {/* desktop nav */}
@@ -170,7 +170,7 @@ const Header = () => {
                             <IoMenu className="w-full h-full p-1" />
                         </Button>
 
-                        <menu className={`fixed top-0 left-0 h-[100dvh] bg-white text-black text-[18px] flex flex-col items-center w-full p-5 pt-10 gap-3 z-1000  
+                        <menu className={`fixed top-0 left-0 h-full bg-white text-black text-[18px] flex flex-col items-center w-full p-5 pt-10 gap-3 z-1000  
                         [&>a]:w-full 
 [&>a]:text-center 
 [&>a]:pb-2
@@ -209,32 +209,44 @@ ${context.menuOpen === true ? "" : "hidden"}
                             <Link component={RouterLink} to="/" underline="none"
                                 sx={{
                                     color: location.pathname === "/" ? "brown" : "black",
-                                }}>
+                                }}
+                                onClick={() => context.setMenuOpen(prev => !prev)}
+                                >
                                 Home
                             </Link>
                             <Link component={RouterLink} to="/about" underline="none" sx={{
                                     color: location.pathname === "/about" ? "brown" : "black",
-                                }}>
+                                }}
+                                onClick={() => context.setMenuOpen(prev => !prev)}
+                                >
                                 About
                             </Link>
                             <Link component={RouterLink} to="/programs" underline="none" sx={{
                                     color: location.pathname === "/programs" ? "brown" : "black",
-                                }}>
+                                }}
+                                onClick={() => context.setMenuOpen(prev => !prev)}
+                                >
                                 Our Programs
                             </Link>
                             <Link component={RouterLink} to="/gallery" underline="none" sx={{
                                     color: location.pathname === "/gallery" ? "brown" : "black",
-                                }}>
+                                }}
+                                onClick={() => context.setMenuOpen(prev => !prev)}
+                                >
                                 Gallery
                             </Link>
                             <Link component={RouterLink} to="/contact" underline="none" sx={{
                                     color: location.pathname === "/contact" ? "brown" : "black",
-                                }}>
+                                }}
+                                onClick={() => context.setMenuOpen(prev => !prev)}
+                                >
                                 Contact
                             </Link>
                             <Link component={RouterLink} to="/blog" underline="none" sx={{
                                     color: location.pathname === "/blog" ? "brown" : "black",
-                                }}>
+                                }}
+                                onClick={() => context.setMenuOpen(prev => !prev)}
+                                >
                                 Blog
                             </Link>
                         </menu>
